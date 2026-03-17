@@ -1,0 +1,48 @@
+site_name: LongTrainer
+site_url: https://ENDEVSOLS.github.io/Long-Trainer
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Getting Started:
+    - Installation: installation.md
+    - Creating an Instance: creating_instance.md
+    - Creating and Using a Bot: creating_using_bot.md
+  - Guides:
+    - CLI & API Server: cli_api.md
+    - Agent Mode & Tools: agent_mode.md
+    - Chat Management: chat_management.md
+    - Supported Formats: supported_formats.md
+    - Updating Bots: updating_bots.md
+    - Deleting Bots: deleting_bot.md
+  - Integrations:
+    - LLMs: integrating_llms.md
+    - Embeddings: integrating_embeddings.md
+  - Migration 1.0.0 → 1.2.0: migration.md
+  - Migration 0.3.4 → 1.0.0: migration.md
+
+theme:
+  name: material
+  logo: assets/longtrainer-logo.png
+  favicon: assets/favicon.ico
+  palette:
+    primary: '#364f6b'
+    accent: '#364f6b'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  features:
+    - navigation.sections
+    - navigation.expand
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      css_class: codehilite
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
+extra_css:
+  - stylesheets/extra.css
